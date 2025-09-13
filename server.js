@@ -49,6 +49,13 @@ app.get('/projects', (req, res) => {
     });
 });
 
+app.get('/achievements', (req, res) => {
+    res.render('achievements', { 
+        title: 'Achievements | Maanas Anand',
+        currentPage: 'achievements'
+    });
+});
+
 app.get('/contact', (req, res) => {
     res.render('contact', { 
         title: 'Contact | Maanas Anand',
