@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">E-<span>Portfolio</span></div>
+                <ul class="nav-links">
+                    <li><a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a></li>
+                    <li><a href="/about" class="<%= currentPage === 'about' ? 'active' : '' %>">About</a></li>
+                    <li><a href="/education" class="<%= currentPage === 'education' ? 'active' : '' %>">Education</a></li>
+                    <li><a href="/skills" class="<%= currentPage === 'skills' ? 'active' : '' %>">Skills</a></li>
+                    <li><a href="/projects" class="<%= currentPage === 'projects' ? 'active' : '' %>">Projects</a></li>
+                    <li><a href="/contact" class="<%= currentPage === 'contact' ? 'active' : '' %>">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <%- body %>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Maanas Anand</h3>
+                    <p>Aspiring IT professional and Undergraduate Student seeking opportunities to apply and expand my technical skills in real-world projects.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 9949298449</p>
+                    <p><i class="fas fa-envelope"></i> maanasanad021@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> NULAKAJODU</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="/">Home</a></p>
+                    <p><a href="/about">About</a></p>
+                    <p><a href="/projects">Projects</a></p>
+                    <p><a href="/contact">Contact</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Maanas Anand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

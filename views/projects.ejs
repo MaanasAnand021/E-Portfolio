@@ -1,0 +1,17 @@
+<%- include('layout', { body: `
+    <!-- Projects Section -->
+    <section id="projects" class="projects" style="padding-top: 150px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p style="color: var(--text-secondary);">Here are some of my recent projects from GitHub</p>
+            </div>
+            
+            <div id="github-repos" class="projects-grid">
+                <div class="github-loader">
+                    <i class="fas fa-spinner fa-spin"></i> Loading GitHub repositories...
+                </div>
+            </div>
+        </div>
+    </section>
+` }) %>
